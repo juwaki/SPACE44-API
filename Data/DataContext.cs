@@ -11,5 +11,6 @@ namespace CRUD.Data
         }
 
         public DbSet<AppUser> Users { get; set; }
+        public DbSet<Space44Data> SpaceData { get; set; }
     }
 }

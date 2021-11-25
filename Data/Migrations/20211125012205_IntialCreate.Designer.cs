@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CRUD.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20211123224126_IntialCreate")]
+    [Migration("20211125012205_IntialCreate")]
     partial class IntialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -36,6 +36,35 @@ namespace CRUD.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("CRUD.Entities.Space44Data", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("First")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Hobby")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Last")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Location")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Phone")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("SpaceData");
                 });
 #pragma warning restore 612, 618
         }
