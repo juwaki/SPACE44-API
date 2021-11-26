@@ -27,5 +27,8 @@ namespace CRUD.Controllers
             return await _context.SpaceData.ToListAsync();
         }
 
+        [HttpPost("add")]
+       
+
     }
 }
