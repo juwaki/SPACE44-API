@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CRUD.DTOs
 {
-    public class CreateDTO
+    public class UpdateDTO
     {
         public string First { get; set; }
 
