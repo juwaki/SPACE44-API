@@ -22,7 +22,6 @@ namespace CRUD.Controllers
         }
 
         [HttpGet]
-        [AllowAnonymous]
         public async  Task<ActionResult<IEnumerable<Space44Data>>> GetData() 
         {
 
@@ -31,7 +30,6 @@ namespace CRUD.Controllers
         
 
         [HttpGet("{id}")]
-        [AllowAnonymous]
         public async Task<ActionResult<Space44Data>> GetData(int id) 
         {
             return await _context.SpaceData.FindAsync(id);
@@ -39,7 +37,6 @@ namespace CRUD.Controllers
         }
 
         [HttpPost("add")]
-        [AllowAnonymous]
         public async Task<ActionResult<CreateDTO>> Register(CreateDTO createDTO)
         {
 
